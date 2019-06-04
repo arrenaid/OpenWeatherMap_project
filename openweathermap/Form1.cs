@@ -19,7 +19,7 @@ namespace openweathermap
         {
             InitializeComponent();
         }
-        public string connextionWeather(string pref = "/weather")// , /hourly , /daily , /history/city
+        public string connectionWeather(string pref = "/weather")// , /hourly , /daily , /history/city
         {
             string response;
             string str = textBox1.Text;
@@ -39,27 +39,30 @@ namespace openweathermap
             try
             {
 
-                string response = connextionWeather();
+                string response = connectionWeather();
                 
                 WeatherResponse weatherResponse = JsonConvert.DeserializeObject<WeatherResponse>(response);
 
-                //label1.Text = "City: " + weatherResponse.Name;
-                //label2.Text = "Temperature: " + weatherResponse.Main.Temp + ", °C";
-                //label3.Text = "Humidity: " + weatherResponse.Main.Humidity + ", %";
-                //label4.Text = "Pressure: " + weatherResponse.Main.Pressure + ", hPa";
-                //label5.Text = "Cloudiness: " + weatherResponse.Clouds.All + ", %";
-                //label6.Text = "Wind speed: " + weatherResponse.Wind.Speed;
-                //label7.Text = weatherResponse.Weather[0].Main;
-                label1.Text = "Город: " + weatherResponse.Name;
-                label2.Text = "Температура: " + weatherResponse.Main.Temp + ", °C";
-                label3.Text = "Влажность: " + weatherResponse.Main.Humidity + ", %";
-                label4.Text = "Давление: " + weatherResponse.Main.Pressure + ", hPa";
-                label5.Text = "Облачность: " + weatherResponse.Clouds.All + ", %";
-                label6.Text = "Скорость ветра: " + weatherResponse.Wind.Speed;
-                label7.Text = weatherResponse.Weather[0].Description;
-                label8.Text = "Страна: " + weatherResponse.Sys.Country;
-                label9.Text = "Рассвет: " + weatherResponse.Sys.ConvertFromUnixTimestamp(weatherResponse.Sys.Sunrise) + ", UTC";
-                label10.Text = "Закат: " + weatherResponse.Sys.ConvertFromUnixTimestamp(weatherResponse.Sys.Sunset) + ", UTC";
+                label1.Text = "City: " + weatherResponse.Name;
+                label2.Text = "Temperature: " + weatherResponse.Main.Temp + ", °C";
+                label3.Text = "Humidity: " + weatherResponse.Main.Humidity + ", %";
+                label4.Text = "Pressure: " + weatherResponse.Main.Pressure + ", hPa";
+                label5.Text = "Cloudiness: " + weatherResponse.Clouds.All + ", %";
+                label6.Text = "Wind speed: " + weatherResponse.Wind.Speed + ", m/s";
+                label7.Text = weatherResponse.Weather[0].Main;
+                label8.Text = "Country: " + weatherResponse.Sys.Country;
+                label9.Text = "Sunrise: " + weatherResponse.Sys.ConvertFromUnixTimestamp(weatherResponse.Sys.Sunrise) + ", UTC";
+                label10.Text = "Sunset: " + weatherResponse.Sys.ConvertFromUnixTimestamp(weatherResponse.Sys.Sunset) + ", UTC";
+                //label1.Text = "Город: " + weatherResponse.Name;
+                //label2.Text = "Температура: " + weatherResponse.Main.Temp + ", °C";
+                //label3.Text = "Влажность: " + weatherResponse.Main.Humidity + ", %";
+                //label4.Text = "Давление: " + weatherResponse.Main.Pressure + ", hPa";
+                //label5.Text = "Облачность: " + weatherResponse.Clouds.All + ", %";
+                //label6.Text = "Скорость ветра: " + weatherResponse.Wind.Speed;
+                //label7.Text = weatherResponse.Weather[0].Description;
+                //label8.Text = "Страна: " + weatherResponse.Sys.Country;
+                //label9.Text = "Рассвет: " + weatherResponse.Sys.ConvertFromUnixTimestamp(weatherResponse.Sys.Sunrise) + ", UTC";
+                //label10.Text = "Закат: " + weatherResponse.Sys.ConvertFromUnixTimestamp(weatherResponse.Sys.Sunset) + ", UTC";
 
                 label1.Update();
                 label2.Update();
@@ -77,27 +80,6 @@ namespace openweathermap
                 MessageBox.Show("error connecting!");
             }
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void historicalToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolStripLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             try
@@ -116,5 +98,6 @@ namespace openweathermap
                 MessageBox.Show("error connecting!");
             }
         }
+        private void Label5_Click(object sender, EventArgs e){        }
     }
 }
