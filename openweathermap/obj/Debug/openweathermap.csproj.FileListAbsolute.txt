@@ -1,0 +1,13 @@
+C:\Users\mm1\source\repos\openweathermap\openweathermap\bin\Debug\openweathermap.exe.config
+C:\Users\mm1\source\repos\openweathermap\openweathermap\bin\Debug\openweathermap.exe
+C:\Users\mm1\source\repos\openweathermap\openweathermap\bin\Debug\openweathermap.pdb
+C:\Users\mm1\source\repos\openweathermap\openweathermap\obj\Debug\openweathermap.csprojResolveAssemblyReference.cache
+C:\Users\mm1\source\repos\openweathermap\openweathermap\obj\Debug\openweathermap.Form1.resources
+C:\Users\mm1\source\repos\openweathermap\openweathermap\obj\Debug\openweathermap.Properties.Resources.resources
+C:\Users\mm1\source\repos\openweathermap\openweathermap\obj\Debug\openweathermap.csproj.GenerateResource.Cache
+C:\Users\mm1\source\repos\openweathermap\openweathermap\obj\Debug\openweathermap.csproj.CoreCompileInputs.cache
+C:\Users\mm1\source\repos\openweathermap\openweathermap\obj\Debug\openweathermap.exe
+C:\Users\mm1\source\repos\openweathermap\openweathermap\obj\Debug\openweathermap.pdb
+C:\Users\mm1\source\repos\openweathermap\openweathermap\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mm1\source\repos\openweathermap\openweathermap\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mm1\source\repos\openweathermap\openweathermap\obj\Debug\openweathermap.Form2.resources
